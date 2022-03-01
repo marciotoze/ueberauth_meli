@@ -91,7 +91,6 @@ defmodule Ueberauth.Strategy.Meli do
   @doc false
   def credentials(conn) do
     token = conn.private.meli_token
-    user = conn.private[:meli_user]
 
     %Credentials{
       token: token.access_token,
